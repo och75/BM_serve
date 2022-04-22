@@ -14,6 +14,8 @@ PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
 CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
 pip install "apache-airflow[postgres,google]==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
 
+pip install -r requirements.txt
+
 export PROJECT_ROOT=/Users/o.charles/PycharmProjects/BM_serve
 export AIRFLOW_HOME=$PROJECT_ROOT/airflow_config/
 export GOOGLE_APPLICATION_CREDENTIALS=$AIRFLOW_HOME/gcp_bm_airflow_sa.json
