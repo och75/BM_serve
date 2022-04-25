@@ -1,7 +1,8 @@
 import os
 # TODO UPDATE THE FOLLOWING VALUE
-os.environ['AIRFLOW_HOME'] ='/Users/o.charles/PycharmProjects/BM_serve/airflow_config/'
+os.environ['PROJECT_ROOT'] = '/Users/o.charles/PycharmProjects/BM_serve'
 
+os.environ['AIRFLOW_HOME'] = f'{os.environ["PROJECT_ROOT"]}/airflow_config/'
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = f'{os.environ["AIRFLOW_HOME"]}/gcp_bm_airflow_sa.json'
 os.environ['GOOGLE_CLOUD_PROJECT'] = 'och-sandbox'
 

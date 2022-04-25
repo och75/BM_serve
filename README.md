@@ -20,6 +20,9 @@ PROJECT_ROOT
 (exported in the file $PROJECT_ROOT/env.txt) in the environment variable 
 of your python run configuration template
 
+### test & debug
+you can test & debug the code of the DAG with the file sandbox/test_functions.py
+
 ### connect to 
 - Airflow: http://localhost:8080/home
 - BigQuery: https://console.cloud.google.com/bigquery?hl=fr&project=och-sandbox
@@ -27,5 +30,6 @@ of your python run configuration template
 
 
 ### code notes
+https://docs.google.com/document/d/1yFjjWUOrB455XZeTvBZBQaswy_8eHdmF4OZicd8Fw-M/edit#
 
 
