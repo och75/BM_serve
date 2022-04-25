@@ -1,6 +1,6 @@
-#how to install the project ?
+# how to install the project ?
 
-#### install google SDK
+### install google SDK
 https://cloud.google.com/sdk/docs/install-sdk
 
 ### install env
